@@ -1,0 +1,67 @@
+{
+  "attribute_metrics": {
+    "SILHOUETTE": {
+      "span_precision": 0.8889,
+      "span_recall": 1.0,
+      "span_f1": 0.9412,
+      "slot_accuracy": 0.9167,
+      "support": 8
+    },
+    "FABRIC": {
+      "span_precision": 0.8462,
+      "span_recall": 0.8462,
+      "span_f1": 0.8462,
+      "slot_accuracy": 0.75,
+      "support": 13
+    },
+    "NECKLINE": {
+      "span_precision": 1.0,
+      "span_recall": 1.0,
+      "span_f1": 1.0,
+      "slot_accuracy": 1.0,
+      "support": 9
+    },
+    "SLEEVE": {
+      "span_precision": 1.0,
+      "span_recall": 1.0,
+      "span_f1": 1.0,
+      "slot_accuracy": 1.0,
+      "support": 6
+    },
+    "LENGTH": {
+      "span_precision": 1.0,
+      "span_recall": 0.6667,
+      "span_f1": 0.8,
+      "slot_accuracy": 0.9167,
+      "support": 3
+    },
+    "EMBELLISHMENT": {
+      "span_precision": 0.9091,
+      "span_recall": 0.7692,
+      "span_f1": 0.8333,
+      "slot_accuracy": 0.75,
+      "support": 13
+    },
+    "COLOR": {
+      "span_precision": 0.7778,
+      "span_recall": 0.875,
+      "span_f1": 0.8235,
+      "slot_accuracy": 0.8333,
+      "support": 8
+    },
+    "CATEGORY": {
+      "span_precision": 1.0,
+      "span_recall": 1.0,
+      "span_f1": 1.0,
+      "slot_accuracy": 1.0,
+      "support": 8
+    }
+  },
+  "overall": {
+    "precision": 0.9104,
+    "recall": 0.8971,
+    "f1_score": 0.9037,
+    "slot_accuracy": 0.8958,
+    "total_test_samples": 12
+  }
+}
