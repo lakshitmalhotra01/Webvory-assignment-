@@ -159,9 +159,9 @@ function App() {
     <div className="app-container">
       <header className="header">
         <div className="logo-section">
-          <div className="logo-icon">A</div>
+          <div className="logo-icon">V</div>
           <div className="logo-text">
-            <h1>Antigravity Extraction</h1>
+            <h1>VogueParse AI</h1>
             <p>Product Attribute Extraction NLP Pipeline</p>
           </div>
         </div>
