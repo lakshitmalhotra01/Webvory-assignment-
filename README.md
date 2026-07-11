@@ -10,41 +10,6 @@ This repository implements a full-stack solution featuring:
 
 ---
 
-## 🚀 Quick Start (Single Command)
-
-We provide a master Python orchestrator script (`run.py`) to manage the entire lifecycle of the application.
-
-### Prerequisites
-Make sure you have Python 3.8+ and Node.js v18+ installed on your system.
-
-### 1. Run the Entire Build Pipeline
-This command programmatically generates the dataset, trains the model, runs evaluation, and compiles the React frontend:
-```bash
-python run.py all
-```
-*Note: SpaCy and other Python dependencies must be installed beforehand. If they aren't, run: `pip install spacy fastapi uvicorn pandas scikit-learn pydantic`.*
-
-### 2. Start the Server
-Once the build is complete, launch the FastAPI server:
-```bash
-python run.py serve
-```
-The server will start at **[http://localhost:8000](http://localhost:8000)**.
-- **Frontend Dashboard**: Open [http://localhost:8000](http://localhost:8000) in your browser.
-- **Interactive API Documentation**: Open [http://localhost:8000/docs](http://localhost:8000/docs) (Swagger UI).
-
----
-
-## 🛠️ Individual Commands
-You can also run individual steps using `run.py`:
-
-- **Data Prep**: `python run.py prepare` -> Compiles `data/labeled_dataset.json`
-- **Training**: `python run.py train` -> Trains the NER model and saves weights to `model/best_model/`
-- **Evaluation**: `python run.py evaluate` -> Evaluates model on test split and saves `data/evaluation_metrics.json`
-- **Frontend Build**: `python run.py build-frontend` -> Compiles React files to `frontend/dist/`
-- **API Server**: `python run.py serve` -> Starts the FastAPI backend
-
----
 
 ## 📈 Evaluation Metrics Report
 Our model was evaluated on a **20% test split** (12 random samples representing 68 individual entities). The pipeline metrics show exceptionally high performance for domain-specific slot-filling:
@@ -85,11 +50,3 @@ During rigorous pipeline testing, three primary edge cases were identified as NL
 
 ---
 
-## 🎥 Demo Video Guide
-The frontend dashboard is designed to double as an interactive demonstration interface.
-To record your demo:
-1. Start the server using `python run.py serve` and open [http://localhost:8000](http://localhost:8000).
-2. **Playground Tab**: Show the interactive features. Click on one of the sample description chips (e.g., *"Sparkly sequin fitted prom gown..."*). Click **"Extract Attributes"** and show the custom colored entity tokens (displaCy style) and the generated JSON side-by-side.
-3. **Performance Tab**: Highlight the metrics table and explain F1-score and Slot-level accuracy.
-4. **Dataset Tab**: Type "satin" or "sweetheart" in the search bar to demonstrate dataset query exploration.
-5. **Documentation Tab**: Briefly show the methodology report to demonstrate professional project documentation.
